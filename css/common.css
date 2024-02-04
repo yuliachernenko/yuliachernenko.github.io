@@ -1,0 +1,17 @@
+/* common.css*/
+
+html {
+  --primary-text-color: #000;
+  --primary-bg-color: #fff;
+  --anchor-color: indigo;
+}
+
+footer {
+  --footer-text-color: #fff;
+  --footer-bg-color: #000;
+}
+
+body {
+  --body-text-color: #000;
+  --body-bg-color: #fff;
+}

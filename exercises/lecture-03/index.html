@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lection 03</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <style type="text/css">
+      /* В сепедині style визначте селектор p з властивістю color: red */
+      /*
+        визначте для елементів p властивість фону таким чином:
+        background: var(--bgColor);
+        */
+      p {
+        color: red;
+        background: var(--bgColor);
+      }
+
+      /*  Додайте тут елеиент style */
+
+      body {
+        background: var(--bgColor);
+      }
+
+      div {
+        --bgColor: limegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lection 03</h1>
+
+    <h2>Сторінка Вікіпедії для мови CSS</h2>
+    <iframe
+      src="https://uk.wikipedia.org/wiki/CSS"
+      title="wikipedia page for CSS language"
+    ></iframe>
+
+    <!-- 
+		Додайте тут елеиент p з текстом This is my paragraph.
+		визначте атрибут style для тега p зі значенням color: blue;
+	-->
+
+    <p style="color: blue">This is my paragraph.</p>
+
+    <!-- У наступному фпагменті випрвити помилки -->
+    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+    <p id="exciting">The most exciting paragraph on the page. One of a kind!</p>
+
+    <div id="exciting-div">
+      The most exciting paragraph on the page. One of a kind!
+    </div>
+
+    <style>
+      #exciting {
+        background: #f69d3c;
+        border: 1px solid #696969;
+        padding: 10px;
+      }
+      #exciting-div {
+        background: #f69d3c;
+        border: 1px solid #696969;
+        padding: 10px;
+      }
+    </style>
+
+    <!-- Додайте тут 2 елеиенти div: -->
+    <div>
+      <h3>Div 1</h3>
+      <p>Paragraph 1</p>
+    </div>
+
+    <div>
+      <h3>Div 2</h3>
+      <p>Paragraph 2</p>
+    </div>
+    <!--Виправити помилку у фпагменті
+ * потрібно вказати до якого елемента застосовується{
+  margin: 0;
+  padding: 0;
+ }
+ /* more styles */
+ @import url("my-imported-styles.css"); тут потрібно вказати правильно адресу посилання -->
+  </body>
+</html>
