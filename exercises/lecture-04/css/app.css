@@ -103,36 +103,3 @@ body {
 h1 {
   font-size: 1.4rem;
 }
-
-/* .named {
-  color: aliceblue;
-  background-color: indianred;
-  font-size: 1.5rem;
-} */
-
-/* .rgp {
-  color: rgb(200, 100, 0);
-  font-size: 0.5rem;
-} */
-
-/* .rgp span {
-  font-size: 3em;
-} */
-
-/* .hex {
-  /* 0 1 2 3 4 5 6 7 8 9 a b c d e f */
-/* color: #ffff00; */
-/* font-size: 5ex;
-} */
-
-/* .transp {
-  /* color: rgba(0, 0, 255, 0.5); */
-/* color: rgb(0 0 255 / 0.5);
-  font-size: 4.5ch;
-} */
-
-/* .hsl {
-  color: hsl(9deg, 100%, 50%);
-  /* font-size: 4.5in; */
-/* font-size: 4vh;
-} */
