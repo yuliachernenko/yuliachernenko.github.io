@@ -13,6 +13,18 @@
   color: #ddd;
 }
 
-/page-header-brand {
+.page-header-brand {
   color: red;
+}
+.footer-social {
+  background: #333;
+  > ul > li > a {
+    color: #fff;
+  }
+}
+.footer-ligal {
+  background: #000;
+  > ul > li > a {
+    color: #fff;
+  }
 }

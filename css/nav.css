@@ -6,4 +6,15 @@
 
 .page-header .brand {
   color: var(--anchor-activ-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* brand */
+
+.navbar {
+  a {
+    font-size: 1.1rem;
+    color: var(--anchor-activ-color);
+  }
 }

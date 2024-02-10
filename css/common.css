@@ -1,31 +1,63 @@
 /* common.css*/
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);
+
 * {
   margin: 0;
 }
 
 html {
-  --primary-text-color: #009;
+  --primary-text-color: #000;
   --primary-bg-color: #fff;
-  --anchor-color: #333;
+  --anchor-color: #111;
   --anchor-activ-color: salmon;
 }
 
-body {
-  color: var(--body-text-color);
-  background: var(--body-bg-color);
+/* Визначити у глобальній області видимості змінні: */
+html {
+  --primary-font-family: "Roboto", sans-serif;
+  --primary-font-size: 0.875rem;
 }
 
+/* Встановити, за допомогою визначених у файлі css/common.css змінних, властивості елемента body:
+font-family
+font-size */
+body {
+  color: var(--primary-text-color);
+  background: var(--body-bg-color);
+  font-family: "Roboto", sans-serif;
+  /* 1rem=16px */
+  font-size: 0.875rem / 1.3;
+}
+
+footer {
+  --footer-text-color: #fff;
+  --footer-bg-color: #000;
+}
+/* Встановіть для тега a властивість text-decoration: none; у файлі css/common.css */
 a {
   color: var(--anchor-color);
+  text-decoration: none;
 }
 
+/* Встановити властивість font-weight: 700 для елементів h1, h2, h3 */
 h1,
 h2,
 h3 {
-  font-weight: 600;
+  font-weight: 700;
 }
 
-p {
-  /* common property for p*/
+/* Встановити властивість font-size: 1.45rem для елемента h1 */
+h1 {
+  font-size: calc(1.45rem + 1.1vw);
 }
+
+/* Встановити властивість font-size: 1.3rem для елемента h2 */
+h2 {
+  font-size: calc(1.2rem + 0.8vw);
+}
+
+/* p {
+  /* common property for p*/
+/* } */
