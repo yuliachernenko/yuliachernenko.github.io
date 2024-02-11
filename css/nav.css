@@ -2,19 +2,30 @@
 
 .page-header {
   background-color: white;
-}
 
-.page-header .brand {
-  color: var(--anchor-activ-color);
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-/* brand */
-
-.navbar {
-  a {
-    font-size: 1.1rem;
+  /* brand */
+  > .brand {
     color: var(--anchor-activ-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  > .navbar {
+    a {
+      font-size: 1.1rem;
+      color: var(--anchor-color);
+    }
+    > a:hover {
+      color: var(--anchor-activ-color);
+      text-decoration: underline;
+    }
+  }
+  > .toobar {
+    a {
+      font-size: 1.1rem;
+      color: var(--anchor-color);
+    }
+    > a:hover {
+      color: var(--anchor-activ-color);
+    }
   }
 }

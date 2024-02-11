@@ -7,3 +7,40 @@ main .container h2 > span {
 main .container h2 {
   text-transform: uppercase;
 }
+
+.product-container {
+  > .product {
+    .icons {
+      > a {
+        background-color: #fff;
+        color: var(--anchor-color);
+      }
+      > a:hover {
+        background-color: var(--anchor-activ-color);
+        color: #fff;
+      }
+    }
+    .image {
+    }
+    .content {
+      h3 {
+      }
+      > .price {
+        font-weight: 600;
+        color: var(--anchor-activ-color);
+      }
+      > .price::before {
+        color: var(--anchor-activ-color);
+        content: var(--currency-symbol);
+      }
+    }
+  }
+}
+ul.categories a:hover {
+  color: var(--anchor-activ-color);
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+ul.categories li:nth-child(even) {
+  background-color: lightgrey;
+}

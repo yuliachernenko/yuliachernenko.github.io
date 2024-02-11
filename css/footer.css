@@ -1,30 +1,62 @@
 /* footer */
 
 .page-footer {
-  color: #eee;
-  background-color: #555;
-}
+  --footer-background-color: #555;
+  --footer-social-background-color: #333;
+  --footer-ligal-background-color: #000;
+  --footer-a-color: #eee;
+  --footer-light-color: #fff;
+  --footer-a-font-size: 0.85rem;
+  > .footer-main {
+    background-color: var(--footer-background-color);
+    > .footer-main-item {
+      > ul > li > a {
+        color: var(--footer-a-color);
+        font-size: var(--footer-a-font-size);
+      }
+      > ul > li > a:hover {
+        color: var(--footer-light-color);
+      }
+      > ul > li > a:hover::before {
+        color: var(--footer-light-color);
+        font-weight: 900;
+        content: "\f00c";
+        font-family: "Font Awesome  5 Free";
+        margin-right: 3px;
+      }
 
-.page-footer ul {
-  list-style: none;
-}
-
-.page-footer ul > li > a {
-  color: #ddd;
+      > .footer-title {
+        font-size: 1.1 rem;
+        color: var(--footer-light-color);
+      }
+    }
+  }
+  > .footer-social {
+    background-color: var(--footer-social-background-color);
+    > .footer-social-list > li > a > i {
+      font-size: 1.25 rem;
+      color: var(--footer-a-color);
+    }
+    > .footer-social-list > li > a:hover > i {
+      color: var(--anchor-activ-color);
+    }
+  }
+  > .footer-ligal {
+    background: var(--footer-ligal-background-color);
+    > ul.footer-ligal-list {
+      > li {
+        white-space: nowrap;
+        > a {
+          color: var(--footer-light-color);
+        }
+        > a:hover {
+          color: var(--footer-a-color);
+        }
+      }
+    }
+  }
 }
 
 .page-header-brand {
   color: red;
-}
-.footer-social {
-  background: #333;
-  > ul > li > a {
-    color: #fff;
-  }
-}
-.footer-ligal {
-  background: #000;
-  > ul > li > a {
-    color: #fff;
-  }
 }
