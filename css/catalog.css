@@ -10,21 +10,36 @@ main .container h2 {
 
 .product-container {
   > .product {
+    position: relative;
     .icons {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+
       > a {
         background-color: #fff;
         color: var(--anchor-color);
+        display: block;
+        margin-top: 0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1rem;
+        text-align: center;
       }
       > a:hover {
         background-color: var(--anchor-activ-color);
         color: #fff;
       }
     }
-    /* .image {
-    } */
+    .image {
+      object-fit: cover;
+    }
     .content {
-      /* h3 {
-      } */
+      h3 {
+        padding-bottom: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+      }
       > .price {
         font-weight: 600;
         color: var(--anchor-activ-color);
@@ -32,6 +47,13 @@ main .container h2 {
       > .price::before {
         color: var(--anchor-activ-color);
         content: var(--currency-symbol);
+      }
+      > .price:nth-of-type(1) {
+        float: left;
+        text-decoration: line-through;
+      }
+      > .price:nth-of-type(2) {
+        float: right;
       }
     }
   }
