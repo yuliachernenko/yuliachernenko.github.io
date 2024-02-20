@@ -8,6 +8,48 @@
     stroke-width: 2;
   }
 }
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center center;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.divider {
+  background: url(/images/divider-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.divider h1 {
+  font-size: 4vw;
+  font-weight: 700;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(25, 76, 192)),
+    color-stop(20%, rgb(196, 26, 3)),
+    color-stop(40%, rgb(236, 190, 6)),
+    color-stop(60%, rgb(25, 76, 192)),
+    color-stop(80%, rgb(3, 116, 8)),
+    to(rgb(196, 26, 3))
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*  padding */
 .py-0 {
   padding-top: 0rem;
@@ -68,6 +110,11 @@
   padding-right: 3rem;
 }
 
+.px-6 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
 .mb-0 {
   margin-bottom: 0rem;
 }
@@ -91,6 +138,14 @@
   margin-bottom: 3rem;
 }
 
+.mr-5 {
+  margin-right: 3rem;
+}
+
+.mt-5 {
+  margin-right: 3rem;
+}
+
 .d-inline-block {
   display: inline-block;
 }
@@ -99,12 +154,15 @@
   text-align: center;
 }
 
-.btn-red-gradien {
+.btn-red-gradient {
   color: #fff;
   background-image: linear-gradient(coral, orangered, firebrick, orangered);
-  background-size: 100%, 300%;
+  background-size: 100% 300%;
   background-position: 0 50%;
-  /* padding: .5rem 2rem .5rem ; */
+  /* padding: .5rem 2rem .5rem 2rem; */
+  padding: 0.5rem 2rem;
+  border: 1px coral solid;
+  border-radius: 8%;
 }
 .btn-red-gradient:hover {
   background-position: 0 0;

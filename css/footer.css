@@ -7,9 +7,14 @@
   --footer-a-color: #eee;
   --footer-light-color: #fff;
   --footer-a-font-size: 0.85rem;
-  > .footer-main {
+
+  & .footer-main {
     background-color: var(--footer-background-color);
-    > .footer-main-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1.25rem 1.875rem;
+    & .footer-main-item {
       > ul > li > a {
         color: var(--footer-a-color);
         font-size: var(--footer-a-font-size);
@@ -27,18 +32,24 @@
 
       > .footer-title {
         font-size: 1.1 rem;
+        text-align: center;
         color: var(--footer-light-color);
       }
     }
   }
-  > .footer-social {
+  & .footer-social {
     background-color: var(--footer-social-background-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
     > .footer-social-list {
       > li {
         display: inline-block;
         > a > i {
           font-size: 1.25 rem;
           color: var(--footer-a-color);
+          margin-right: 0.5rem;
         }
       }
     }
@@ -46,9 +57,12 @@
       color: var(--anchor-activ-color);
     }
   }
-  > .footer-ligal {
+  & .footer-ligal {
     background: var(--footer-ligal-background-color);
     > ul.footer-ligal-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
       > li {
         white-space: nowrap;
         > a {
