@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 7%;
+  padding: 1.5rem 10%;
   /* brand */
   > .brand {
     color: var(--anchor-activ-color);
@@ -20,7 +20,7 @@
   > .navbar {
     a {
       font-size: 1.1rem;
-      margin: 1;
+      margin-right: 0.5rem;
       color: var(--anchor-color);
     }
     > a:hover {

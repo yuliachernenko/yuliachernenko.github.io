@@ -14,6 +14,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 1.25rem 1.875rem;
+
     & .footer-main-item {
       > ul > li > a {
         color: var(--footer-a-color);
@@ -58,19 +59,23 @@
     }
   }
   & .footer-ligal {
-    background: var(--footer-ligal-background-color);
+    background-color: var(--footer-ligal-background-color);
+
     > ul.footer-ligal-list {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       > li {
         white-space: nowrap;
-        > a {
-          color: var(--footer-light-color);
-        }
-        > a:hover {
-          color: var(--footer-a-color);
-        }
+      }
+      > li > a {
+        color: var(--footer-light-color);
+      }
+      > li > a:hover {
+        color: var(--footer-a-color);
+      }
+      > li:nth-last-child(2) {
+        flex: 1;
       }
     }
   }

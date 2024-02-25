@@ -1,0 +1,17 @@
+/* blog.css */
+
+#blog .container {
+  display: grid;
+  gap: 1.3 em;
+  grid-template-columns: auto 15rem;
+}
+
+.blog-main {
+  height: 30ch;
+  border: 1px dotted red;
+}
+
+.blog-sidebar {
+  height: 30ch;
+  border: 1px dotted gold;
+}

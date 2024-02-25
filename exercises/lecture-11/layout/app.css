@@ -1,0 +1,37 @@
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+
+  /* 02-1 Створіть сітку з 3-х колонок */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  /* Налаштуйте grid-властивості так, щоб header займав 3 колонки, main - 2 колонки, footer - 3 колонки. */
+  grid-template-areas:
+    "header header header"
+    "sidebar main main "
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background: rgb(247, 247, 247);
+  padding-left: 1%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: rgb(248, 238, 226);
+  padding-left: 1%;
+}
+
+.main {
+  grid-area: main;
+  background: rgb(245, 220, 186);
+  padding-left: 1%;
+}
+
+.footer {
+  grid-area: footer;
+  background: rgb(197, 197, 197);
+  padding-left: 1%;
+}
