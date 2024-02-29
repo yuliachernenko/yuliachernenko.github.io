@@ -93,7 +93,7 @@ main .container h2 {
     z-index: 10;
   }
 }
-@media (min-width 700px) {
+@media (min-width: 700px) {
   #catalog {
     display: grid;
     gap: 1em;

@@ -1,5 +1,7 @@
 /* nav */
-
+#toggler {
+  display: none;
+}
 .page-header {
   background-color: white;
   position: fixed;
@@ -23,6 +25,7 @@
     left: 0;
     right: 0;
     background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     a {
       font-size: 1.1rem;
       margin-right: 0.5rem;
@@ -34,6 +37,10 @@
       text-decoration: underline;
     }
   }
+  #toggler:checked ~ nav.navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
   > .toobar {
     a {
       font-size: 1.1rem;
@@ -49,9 +56,13 @@
   .page-header {
     & .navbar {
       position: relative;
+      clip-path: unset;
     }
     & .navbar > a {
       display: inline-block;
     }
+  }
+  .page-header label {
+    display: none;
   }
 }
