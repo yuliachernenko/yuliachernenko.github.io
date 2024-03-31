@@ -13,6 +13,11 @@ main .container h2 {
   color: white;
 }
 
+.bg-new {
+  background-color: green;
+  color: white;
+}
+
 .product-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
