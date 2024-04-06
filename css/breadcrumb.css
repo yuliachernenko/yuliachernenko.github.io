@@ -18,14 +18,21 @@
   flex-wrap: wrap;
   padding: 0;
   font-size: flex-end;
+
   & .breadcrumb-item {
     color: var(--breadcrumb-color);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
   }
+
+  & .breadcrumb-item.active {
+    color: var(--breadcrumb-active-color);
+  }
+
   & .breadcrumb-item a:hover {
     color: var(--breadcrumb-active-color);
   }
+
   & .breadcrumb-item + .breadcrumb-item {
     padding-left: 0.5rem;
   }
