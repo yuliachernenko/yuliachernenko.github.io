@@ -38,7 +38,7 @@ function Product(id, name, price, image) {
 }
 
 
-function CardProduct(item) {
+function CardProduct(productList, item) {
     
     this.item = item;
    
@@ -445,41 +445,69 @@ const renderShowOnly = (showOnly, products, productContainer) => {
 
 
 let shoppingCart =  new Cart();
-let productList = new ProductList(products);
 const cartAmount = document.getElementById('cart-amount');
 
 cartAmount.textContent = shoppingCart.totalAmount();
+
+async function fetchData(url) {
+    return await fetch(url, {
+        method: 'GET',
+        headers: {"Content-Type": "application/json"}
+    })
+    .then(response => {
+        if(response.status >= 400) {
+            return response.json().then(err => {
+                const error = new Error('Something went wrong!')
+                error.data = err
+                throw error
+            })
+        }
+        return response.json()
+    })
+}
+
 function main() {
+
+   const url = "https://my-json-server.typicode.com/couchjanus/db"; 
 
     const productContainer = document.querySelector('.product-container');
 
     if (productContainer) {
+        fetchData(`${url}/products`)
+        .then(products => {
+            let productList = new ProductList(products);
+            productContainer.innerHTML = productList.populateProductList(products);	
 
-    productContainer.innerHTML = productList.populateProductList(products);	
+            let productCards = productContainer.querySelectorAll('.product');
 
-    let productCards = productContainer.querySelectorAll('.product');
+            productCards.forEach(item => new CardProduct(productList, item));
 
-    productCards.forEach(item => new CardProduct(item));
+            const sidebar = document.getElementById('sidebar');
 
-    const sidebar = document.getElementById('sidebar');
+            if (sidebar) {
+                const categoryContainer = document.getElementById('category-container');
 
-    if (sidebar) {
-        const categoryContainer = document.getElementById('category-container');
-        populateCategories(categoryContainer, categories);
+                fetchData(`${url}/categories`)
+                .then(categories => {
 
-        renderCategory(productContainer, '#category-container', products)
+               
+                populateCategories(categoryContainer, categories);
 
-    }
+                renderCategory(productContainer, '#category-container', products)
+              })
+            }
 
-    const selectPicker = document.getElementById('selectpicker');
-    if (selectPicker) {
-        renderSelect(selectPicker, products, productContainer);
-    }
+            const selectPicker = document.getElementById('selectpicker');
+            if (selectPicker) {
+                renderSelect(selectPicker, products, productContainer);
+            }
 
-    const showOnly = document.querySelector('.show-only');
-    if(showOnly) {
-        renderShowOnly(showOnly, products, productContainer);
-    }
+            const showOnly = document.querySelector('.show-only');
+            if(showOnly) {
+                renderShowOnly(showOnly, products, productContainer);
+            }
+        });
+
 }
 
     const cartPage = document.getElementById('cart-page');

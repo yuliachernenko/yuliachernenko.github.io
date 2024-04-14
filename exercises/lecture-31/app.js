@@ -6,45 +6,37 @@ const template = (item) => `
 <p>Author: <strong><span class="author" data-id="${item.userId}"></span></strong></p>
 `;
 
-const xhrPromise = (method, url) => {
-  const promise = new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    xhr.send();
-  
-    xhr.onload = () => {
-      if (xhr.status >= 400) {
-        reject(xhr.response);
-      } else {
-        resolve(xhr.response);
+const fetchData = (url) => {
+  return fetch(url)
+    .then(response => {
+      if (response.status >= 400) {
+        return response.json().then(err => {
+          const error = new Error('Something went wrong!')
+          error.data = err
+          throw error
+        })
       }
-    };
-
-    xhr.onerror = () => {
-      reject('Something went wrong!');
-    };   
-  });
-
-  return promise;
+      return response.json()
+    })
 };
 
-xhrPromise("GET", url)
-.then(response => {
-    const posts = JSON.parse(response)
-		let result = ''
+fetchData(url)
+  .then(posts => {
+    let result = ''
     posts.forEach(item => {
-        result += template(item)
+      result += template(item)
     })
-    document.getElementById("blog").innerHTML = result; 
-})
-.then(() => {
+    document.getElementById("blog").innerHTML = result;
+  })
+  .then(() => {
     const users = document.querySelectorAll('.author');
     users.forEach(user => {
-        xhrPromise('GET', `https://jsonplaceholder.typicode.com/users/${user.dataset.id}`)
-        .then(response => {
-            let userName = JSON.parse(response)
-            user.textContent = userName.name
-        })
-    })
-})
+      fetchData(`https://jsonplaceholder.typicode.com/users/${user.dataset.id}`)
+        .then(userResponse => {
+         const userName = userResponse.name;
+          user.textContent = userName;
+        });
+    });
+  });
 
+ 
