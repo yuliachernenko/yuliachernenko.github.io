@@ -1,11 +1,11 @@
 //До лекції 34
-export function formatDate(date) {
+export function formatDate(date:any) {
   return new Intl.DateTimeFormat(
     'en-US', { weekday: 'long'}
   ).format(date)
 }
 
- export function Calc(props) {
+ export function Calc(props:any) {
   const sum = props.a + props.b;
   const date= new Date()
   return (
@@ -18,7 +18,7 @@ export function formatDate(date) {
 
 }
 
-export default function Hello(props) {
+export default function Hello(props:any) {
     const date= new Date()
     return (
         <>
