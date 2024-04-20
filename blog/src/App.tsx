@@ -2,42 +2,24 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Hello, {Calc} from './components/Hello';
+import Navbar from './components/Navbar';
+import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 
-//Завдання 3
-const jsxEL = <h1> I am a JSX element</h1>;
 
-//Завдання 4
-const Header = (
-  <header>
-  <h1>Welcome to React</h1>
-  <h2>Getting Started React</h2>
-  <h3>JavaScript Library</h3>
-</header>
-)
-//Завдання 5
-const JSXfragment = (
-  <>
- <h1>Welcome to React</h1>
- <h2>Getting Started React</h2>
- <h3>JavaScript Library</h3>
-</>
+function Welcome(props: any) {
+  return <h1>Hello, {props.name}</h1>
+}
 
-)
-
-//Завдання 6
-const Footer = (
-  <footer>
-    <p>Copyright &copy; 2024</p>
- </footer>
-)
-    
+ 
 
 function App() {
   const [count, setCount] = useState(0)
 let today = new Date()
   return (
     <>
-      {Header}
+      <Navbar/>
       
       <div>
         <a href="https://vitejs.dev" target="_blank">
@@ -57,17 +39,25 @@ let today = new Date()
         </p>
       </div>
 
-      {jsxEL}
+      {/* {jsxEL}
 
-      {JSXfragment}
+      {JSXfragment} */}
 
+      {/* <Welcome></Welcome> */}
+
+     <Gallery/>
+     
+      <Welcome name="React component" />
+      <Welcome name="world"/>
+      <Calc name="Calc" a={77} b={55} />
+      <Hello name="Hello component"/>
       <h3 style={{backgroundColor: 'blue', color:'gold'}}>It's today: {today.toLocaleDateString()}</h3>
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
 
-      {Footer}
+    <Footer/>
     </>
   )
 }
