@@ -553,7 +553,7 @@ async function fetchData(url) {
 
 function main() {
 
-    const url = "https://my-json-server.typicode.com/couchjanus/db";
+    const url = "https://my-json-server.typicode.com/yuliachernenko/db";
 
     const productContainer = document.querySelector('.product-container');
 

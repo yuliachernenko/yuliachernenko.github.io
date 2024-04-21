@@ -15,9 +15,9 @@
   padding: 1.5rem 10%;
   /* brand */
   > .brand {
-    color: var(--anchor-activ-color);
+    color: orange;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   > .navbar {
     position: absolute;
@@ -29,7 +29,7 @@
     a {
       font-size: 1.1rem;
       margin-right: 0.5rem;
-      color: var(--anchor-color);
+      color: gray;
       display: block;
     }
     > a:hover {

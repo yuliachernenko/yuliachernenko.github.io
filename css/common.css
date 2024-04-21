@@ -24,7 +24,7 @@
 font-family
 font-size */
 body {
-  color: var(--primary-text-color);
+  color: var(--anchor-color);
   background: var(--body-bg-color);
   font-family: "Roboto", sans-serif;
   /* 1rem=16px */
