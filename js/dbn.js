@@ -51,7 +51,7 @@
             price: 620,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
             stars: 1,
-            category: 4,
+            category: 3,
         },
         {
             id: 5,
@@ -64,7 +64,7 @@
             price: 1125,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
             stars: 0,
-            category: 5,
+            category: 4,
         },
 
         {
@@ -78,7 +78,7 @@
             price: 1100,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
             stars: 5,
-            category: 6,
+            category: 4,
         },
         {
             id: 7,
@@ -91,7 +91,7 @@
             price: 700,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
             stars: 4,
-            category: 7,
+            category: 5,
         },
 
         {
@@ -105,7 +105,7 @@
             price: 900,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
             stars: 3,
-            category: 8,
+            category: 5,
         },
                       
         {
@@ -119,7 +119,7 @@
             price: 2500,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
             stars: 5,
-            category: 9,
+            category: 6,
         },
                    
         {
@@ -133,7 +133,7 @@
             price: 2800,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
             stars: 0,
-            category: 10,
+            category: 6,
         },
         {
             id: 11,
@@ -146,7 +146,7 @@
             price: 950,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
             stars: 5,
-            category: 11,
+            category: 7,
         },
 
         {
@@ -160,7 +160,7 @@
             price: 11,
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
             stars: 2,
-            category: 12,
+            category: 8,
         },
 	
     ];
@@ -185,61 +185,37 @@
             section: "Backpacks",
             name: "Men's Backpacks"
         },
+        
         {
             id: 4,
-            image: "images/man-1.jpg",
-            section: "Backpacks",
-            name: "Men's Backpacks"
-        },
-        {
-            id: 5,
             image: "images/bananka-man1.jpg",
             section: "BumBag",
             name: "Men's BumBag"
         },
 
         {
-            id: 6,
-            image: "images/bananka-man2.jpg",
-            section: "BumBag",
-            name: "Men's BumBag"
-        },
-        {
-            id: 7,
+            id: 5,
             image: "images/bananka-w1.jpg",
-            section: "BumBag",
-            name: "Woman's BumBag"
-        },
-
-        {
-            id: 8,
-            image: "images/bananka-w2.jpg",
             section: "BumBag",
             name: "Woman's BumBag"
         },
                       
         {
-            id: 9,
+            id: 6,
             image: "images/bag-1w.jpg",
             section: "Bags",
             name: "Woman's Bags"
         },
-                   
+        
         {
-            id: 10,
-            image: "images/bag-2w.jpg",
-            section: "Bags",
-            name: "Woman's Bags"
-        },
-        {
-            id: 11,
+            id: 7,
             image: "images/traveler-bag.jpg",
             section: "Bags",
             name: "Travel Bags"
         },
 
         {
-            id: 12,
+            id: 8,
             image: "images/bag-1man.jpg",
             section: "Bags",
             name: "Men's Bags"

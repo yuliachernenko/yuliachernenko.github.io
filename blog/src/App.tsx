@@ -2,25 +2,25 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Hello, {Calc} from './components/Hello';
-import Navbar from './components/Navbar';
-import Gallery from './components/Gallery';
-import Footer from './components/Footer';
 
 
-function Welcome(props: any) {
-  return <h1>Hello, {props.name}</h1>
-}
+// import Post from './components/Post';
+import Blog from './components/Blog';
 
- 
 
 function App() {
-  const [count, setCount] = useState(0)
-let today = new Date()
+  // const [count, setCount] = useState(0)
+
+  let post = {
+    id: 1,
+    title: "Programming Algorithm",
+    content: `The word Algorithm means “a process or set of rules to be followed in calculations or other problem-solving operations”. Therefore Algorithm refers to a set of rules/instructions that step-by-step define how a work is to be executed upon in order to get the expected results.`,
+    cover: "/vite.svg",
+    likes: 5
+  };
+  
   return (
     <>
-      <Navbar/>
-      
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -30,7 +30,7 @@ let today = new Date()
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">
+      {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -38,26 +38,12 @@ let today = new Date()
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-
-      {/* {jsxEL}
-
-      {JSXfragment} */}
-
-      {/* <Welcome></Welcome> */}
-
-     <Gallery/>
-     
-      <Welcome name="React component" />
-      <Welcome name="world"/>
-      <Calc name="Calc" a={77} b={55} />
-      <Hello name="Hello component"/>
-      <h3 style={{backgroundColor: 'blue', color:'gold'}}>It's today: {today.toLocaleDateString()}</h3>
-
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
 
-    <Footer/>
+      {/* <Post post={post} /> */}
+      <Blog post={post} key={post.id} />
     </>
   )
 }

@@ -6,10 +6,10 @@
             "title": "Sold",
             "bg": "sold"
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/woman-2.jpg", 
-         "name": "Woman's Backpack Brix",
+         "image": "https://yuliachernenko.github.io/images/woman-2.jpg",
+         "name": "Backpack Brix",
          "price": 856,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "Classic backpack of the Brix collection. Laconic design, high-quality materials and practicality are its main advantages.",
          "stars": 3,
          "category": 1
       },
@@ -19,10 +19,10 @@
             "title": "",
             "bg": ""
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/woman-1.jpg",
-         "name": "City Backpack RollTop",
+         "image": "https://yuliachernenko.github.io/images/woman-1.jpg",
+         "name": "City Backpack Roll",
          "price": 1200,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "The backpack of the Roll collection was created for the needs of the city: walking, work, study, gym, urban travel, spring and summer holidays. A roomy and functional assistant places all the necessary things for every day.",
          "stars": 4,
          "category": 2
       },
@@ -32,10 +32,10 @@
             "title": "New",
             "bg": "new"
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/man-2.jpg",
-         "name": " Men's Backpack ReneDouble",
+         "image": "https://yuliachernenko.github.io/images/man-2.jpg",
+         "name": "Backpack Rene",
          "price": 1345,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "The backpack of the Rene collection is roomy, but not bulky, perfectly adapted to the modern rhythms of the city, created specifically to become your constant assistant.",
          "stars": 5,
          "category": 3
       },
@@ -45,12 +45,12 @@
             "title": "Sale",
             "bg": "sale"
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/man-1.jpg",
-         "name": "Men's Backpack ZardDart",
+         "image": "https://yuliachernenko.github.io/images/man-1.jpg",
+         "name": "Men's Backpack Zard",
          "price": 620,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "The backpack of the Zard collection is ideal for active people who are not used to wasting a second. They are useful both for traveling and for walks with friends, going to the gym, studying. They look neat on the back and at the same time mega-roomy: water, clothes, personal, any trinkets necessary for the conditions of the city.",
          "stars": 1,
-         "category": 4
+         "category": 3
       },
       {
          "id": 5,
@@ -58,12 +58,12 @@
             "title": "",
             "bg": ""
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bananka-man1.jpg",
-         "name": "Men's BumBag CityLong",
+         "image": "https://yuliachernenko.github.io/images/bananka-man1.jpg",
+         "name": "BumBag City",
          "price": 1125,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "The compact City BumBag in black gives a sense of originality and uniqueness in style. BumBag City will give you confidence, emphasize your image and individuality.",
          "stars": 0,
-         "category": 5
+         "category": 4
       },
       {
          "id": 6,
@@ -71,12 +71,12 @@
             "title": "",
             "bg": ""
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bananka-man2.jpg",
-         "name": "Men's BumBag DinamicDart",
+         "image": "https://yuliachernenko.github.io/images/bananka-man2.jpg",
+         "name": "BumBag Dinamic",
          "price": 1100,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "Fanny Pack BumBag Transformer Dynamic - Speed, Movement and Purpose. Bag for 9 compartments. It combines convenience, spaciousness and practicality.",
          "stars": 5,
-         "category": 6
+         "category": 4
       },
       {
          "id": 7,
@@ -84,12 +84,12 @@
             "title": "Sale",
             "bg": "sale"
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bananka-w1.jpg",
-         "name": "Woman's BumBag Lili City",
+         "image": "https://yuliachernenko.github.io/images/bananka-w1.jpg",
+         "name": "BumBag Lili City",
          "price": 700,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "Stylish BumBag Lili City. An exquisite accessory that will not only complement your image, but thanks to its spaciousness, will allow you to have everything you need with you and in safety.",
          "stars": 4,
-         "category": 7
+         "category": 5
       },
       {
          "id": 8,
@@ -97,12 +97,12 @@
             "title": "",
             "bg": ""
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bananka-w2.jpg",
-         "name": "Woman's BumBag Lady City",
+         "image": "https://yuliachernenko.github.io/images/bananka-w2.jpg",
+         "name": "BumBag Lady City",
          "price": 900,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "A handbag made of genuine leather on the belt, the Sambag banana is a great option for people who follow fashion trends.",
          "stars": 3,
-         "category": 8
+         "category": 5
       },
       {
          "id": 9,
@@ -110,12 +110,12 @@
             "title": "Sold",
             "bg": "sold"
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bag-1w.jpg",
-         "name": "Woman's Bag Vogue red",
+         "image": "https://yuliachernenko.github.io/images/bag-1w.jpg",
+         "name": "Bag Vogue red",
          "price": 2500,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "The Vogue collection bag is a classic option for those who value convenience, comfort and minimalism in details.",
          "stars": 5,
-         "category": 9
+         "category": 6
       },
       {
          "id": 10,
@@ -123,12 +123,12 @@
             "title": "New",
             "bg": "new"
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bag-2w.jpg",
-         "name": "Woman's Bag Cleo blue",
+         "image": "https://yuliachernenko.github.io/images/bag-2w.jpg",
+         "name": "Bag Cleo blue",
          "price": 2800,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "A stylish women's bag that will complement your look, all the necessary trinkets will always be at hand.",
          "stars": 0,
-         "category": 10
+         "category": 6
       },
       {
          "id": 11,
@@ -136,12 +136,12 @@
             "title": "Sale",
             "bg": "sale"
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/traveler-bag.jpg",
+         "image": "https://yuliachernenko.github.io/images/traveler-bag.jpg",
          "name": "Travel Bag Baron",
          "price": 950,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "The Travel Bag bag will become an indispensable accessory in your wardrobe. It doesn't matter where you are going - to the gym or on a business trip, it will come in handy in any caseLorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
          "stars": 5,
-         "category": 11
+         "category": 7
       },
       {
          "id": 12,
@@ -149,84 +149,60 @@
             "title": "New",
             "bg": "new"
          },
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bag-1man.jpg",
-         "name": "Men's Bag Brad Pitt",
+         "image": "https://yuliachernenko.github.io/images/bag-1man.jpg",
+         "name": "Bag Brad Pitt",
          "price": 11,
-         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "description": "Crossbody bag Brad Pitt sling is perfect for active people in whom comfort and practicality come first.",
          "stars": 2,
-         "category": 12
+         "category": 8
       }
    ],
    "categories": [
       {
          "id": 1,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/woman-2.jpg",
+         "image": "https://yuliachernenko.github.io/images/woman-2.jpg",
          "section": "Backpacks",
          "name": "Woman's Backpacks"
       },
       {
          "id": 2,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/woman-1.jpg",
+         "image": "https://yuliachernenko.github.io/images/woman-1.jpg",
          "section": "Backpacks",
          "name": "City Backpacks"
       },
       {
          "id": 3,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/man-2.jpg",
+         "image": "https://yuliachernenko.github.io/images/man-2.jpg",
          "section": "Backpacks",
          "name": "Men's Backpacks"
       },
       {
          "id": 4,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/man-1.jpg",
-         "section": "Backpacks",
-         "name": "Men's Backpacks"
+         "image": "https://yuliachernenko.github.io/images/bananka-man1.jpg",
+         "section": "BumBag",
+         "name": "Men's BumBag"
       },
       {
          "id": 5,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bananka-man1.jpg",
+         "image": "https://yuliachernenko.github.io/images/bananka-w1.jpg",
          "section": "BumBag",
-         "name": "Men's BumBag"
+         "name": "Woman's BumBag"
       },
       {
          "id": 6,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bananka-man2.jpg",
-         "section": "BumBag",
-         "name": "Men's BumBag"
+         "image": "https://yuliachernenko.github.io/images/bag-1w.jpg",
+         "section": "Bags",
+         "name": "Woman's Bags"
       },
       {
          "id": 7,
-         "image": "github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bananka-w1.jpg",
-         "section": "BumBag",
-         "name": "Woman's BumBag"
-      },
-      {
-         "id": 8,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bananka-w2.jpg",
-         "section": "BumBag",
-         "name": "Woman's BumBag"
-      },
-      {
-         "id": 9,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bag-1w.jpg",
-         "section": "Bags",
-         "name": "Woman's Bags"
-      },
-      {
-         "id": 10,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bag-2w.jpg",
-         "section": "Bags",
-         "name": "Woman's Bags"
-      },
-      {
-         "id": 11,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/traveler-bag.jpg",
+         "image": "https://yuliachernenko.github.io/images/traveler-bag.jpg",
          "section": "Bags",
          "name": "Travel Bags"
       },
       {
-         "id": 12,
-         "image": "https://github.com/yuliachernenko/yuliachernenko.github.io/blob/react_02/images/bag-1man.jpg",
+         "id": 8,
+         "image": "https://yuliachernenko.github.io/images/bag-1man.jpg",
          "section": "Bags",
          "name": "Men's Bags"
       }
