@@ -1,43 +1,46 @@
-import React from "react";
 
-class Post extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {counter: props.post.likes}
+import { useState, useEffect } from 'react'
+
+function Post () {
+
+    const [post, setPost] = useState([]);
+    const [likes, setLikes] = useState(0);
+    const fetchData = async () => {
+        const data = await (
+            await fetch ('https://my-json-server.typicode.com/yuliachernenko/db/posts/1')
+        ).json();
+        setPost(data);
+        console.log(data)
     }
+
+    useEffect(() => {
+        fetchData()
+    }, []);
+
+    const likeThis = () => {
+    setLikes(likes + 1);
+    };
     
-    componentDidMount() {
-        console.log ("Component Post mounted")
-    }
+    useEffect(() => {
+        likeThis();
+        console.log(likes)
+  }, []);
 
-    shouldComponentUpdate(nextProps, nextState) {
-        console.log ("Component Post should update", nextProps, nextState)
-    }
 
-    componentDidUpdate(prevProps, prevState) {
-        console.log ("Component Post updated", prevProps, prevState)
-    }
-
-    render() {
-        return (
-            <article>
-                <div>
-                    <img srs={this.props.post.cover} alt={this.props.post.title}/>
-                </div> 
-                <div>
-                    <h3>{this.props.post.title}</h3>
-                    <p>{this.props.post.content}</p>
-                </div> 
-                
-                <button onClick={() => {
-                    this.setState(() => ({
-                        counter: this.state.counter +1
-                    }))
-                }}>
-                    Like this <strong>{this.state.counter}</strong> 
-                </button>
-           </article> 
+    return (
+    <article className='post'>
+        <div className='cover-container'>
+           <img src={post.cover} alt={post.title} />
+           </div>
+           <div className='post-footer'>
+           <h3>{post.title} {post.id}</h3>
+           <p>{post.content}</p>
+           <button id='like' onClick={likeThis}>
+           Like this post <strong>{likes}</strong>
+           </button>
+        </div>
+    </article> 
         )
     }
-}
+
 export default Post;

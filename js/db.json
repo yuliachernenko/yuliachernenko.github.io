@@ -206,5 +206,64 @@
          "section": "Bags",
          "name": "Men's Bags"
       }
-   ]
+   ],
+   "authors": [
+    {
+      "id": "1",
+      "firstName": "Nick",
+      "lastName": "Lee",
+      "numPosts": 5,
+      "numComments": 24,
+      "numLikes": 105
+    },
+    {
+      "id": "2",
+      "firstName": "Olga",
+      "lastName": "Kolotilo",
+      "numPosts": 15,
+      "numComments": 27,
+      "numLikes": 89
+    }
+  ],
+   "posts": [{
+        "id": "1",
+        "title": "How to choose a backpack?",
+        "content": "To make your choice as simple as possible, we in the online store divide backpacks according to several criteria: by volume, by appointment, by article.",
+        "cover":	"https://yuliachernenko.github.io/images/woman-2.jpg",
+        "authorId": 2,
+        "datePublished": 1712002031418,
+        "numComments": 2,
+        "likes": 7
+}, 
+{
+        "id": "2",
+        "title": "Clothes bag which color to choose?",
+        "content": "It is the color that remains the main factor when choosing a bag for the image. To do this, a woman's wardrobe should have at least two universal accessories – light and dark.",
+        "cover":	"https://yuliachernenko.github.io/images/bag-1w.jpg",
+        "authorId": 1,
+        "datePublished": 1712102031418,
+        "numComments": 1,
+        "likes": 14
+    }, 
+    {
+        "id": "3",
+        "title": "What is a travel bag?",
+        "content": "A travel bag is an accessory used when traveling to store personal belongings. It can be soft or hard, depending on the model and your needs.",
+        "cover":	"https://yuliachernenko.github.io/images/traveler-bag.jpg",
+        "authorId": 1,
+        "datePublished": 1712132031418,
+        "numComments": 4,
+        "likes": 7
+    }, 
+    {
+        "id": "4",
+        "title": "Why a BumBag?",
+        "content": "A BumBag is a compact accessory that can be worn on the belt or over the shoulder. It allows you to keep all your valuables at hand and not worry about their safety.",
+        "cover":	"https://yuliachernenko.github.io/images/bananka-man1.jpg",
+        "authorId": 2,
+        "datePublished": 1712234031785,
+        "numComments": 4,
+        "likes": 7
+    }
+]
 }
