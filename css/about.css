@@ -1,9 +1,9 @@
-/* blog.css */
+/* about.css */
 
-#blog .container {
+#about .container {
   display: grid;
-  gap: 3em;
-  grid-template-columns: 15rem auto;
+  gap: 1.8em;
+  grid-template-columns: auto 15rem;
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
@@ -15,20 +15,18 @@
     display: block;
     height: 15rem;
   }
-  text-indent: 2em;
 }
 
-.blog-main {
+.about-main {
   background-color: rgb(200, 221, 163);
   padding: 2rem;
 }
 
-.blog-sidebar {
+.about-sidebar {
   height: 15rem;
   width: 17rem;
 }
 
-.blog-more {
-  color: rgb(238, 160, 57);
-  padding: 2em;
+ul.groop {
+  list-style: disc;
 }

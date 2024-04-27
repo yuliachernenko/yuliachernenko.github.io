@@ -417,7 +417,7 @@ const populateCategories = (categoryContainer, categories) => {
 
 function renderCategory(productContainer, selector, products) {
     const categoryItems = document.querySelectorAll(selector);
-
+    let productList = new ProductList(products);
     categoryItems.forEach(item => item.addEventListener('click', e => {
         e.preventDefault();
 
@@ -439,8 +439,9 @@ const sortingOptions = () => sortingOrders.map(item => `<option value="${item.ke
 
 function renderSelect(selectPicker, products, productContainer) {
     selectPicker.innerHTML = sortingOptions();
-
-    selectPicker.addEventListener('change', function() {
+  
+    selectPicker.addEventListener('change', function () {
+        let productList = new ProductList(products);
         switch(this.value) {
             case 'low-high':
                 productContainer.innerHTML = productList.populateProductList(products.sort(compare('price', 'asc')))
@@ -495,14 +496,15 @@ const badgeTemplate = (item) => `
 </div>
 `;
 
-const renderList = (products, value) => productList.populateProductList(products.filter(product => product.badge.title.includes(value)));
+
 
 const renderShowOnly = (showOnly, products, productContainer) => {
     let badges = [...new Set([...products.map(item => item.badge.title)].filter(item=>item != ''))];
 
     showOnly.innerHTML = badges.map(item => badgeTemplate(item)).join("");
     let checkboxes = showOnly.querySelectorAll('input[name="badge"]');
-
+    const renderList = (products, value) => productList.populateProductList(products.filter(product => product.badge.title.includes(value)));
+    let productList = new ProductList(products);
     let values = [];
 
     checkboxes.forEach(item => {
@@ -595,7 +597,7 @@ function main() {
     }
 
     const cartPage = document.getElementById('cart-page');
-    if(cartPage) {
+    if (cartPage) {
         const shippingCartItems = cartPage.querySelector('.cart-main .table');
         shippingCartItems.innerHTML = shoppingCart.populateShoppingCart(products);
         shoppingCart.renderCart(shippingCartItems)

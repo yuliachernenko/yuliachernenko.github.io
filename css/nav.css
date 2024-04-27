@@ -3,7 +3,7 @@
   display: none;
 }
 .page-header {
-  background-color: white;
+  background-color: rgb(167, 180, 143);
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@
   padding: 1.5rem 10%;
   /* brand */
   > .brand {
-    color: orange;
+    color: rgb(244, 77, 16);
     font-weight: 600;
     font-size: 1.5rem;
   }
@@ -24,12 +24,12 @@
     top: 99.9%;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: rgb(167, 180, 143);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     a {
       font-size: 1.1rem;
       margin-right: 0.5rem;
-      color: gray;
+      color: darkslategray;
       display: block;
     }
     > a:hover {

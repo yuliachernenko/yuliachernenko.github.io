@@ -22,8 +22,7 @@ function Post () {
     };
     
     useEffect(() => {
-        likeThis();
-        console.log(likes)
+    likeThis();
   }, []);
 
 

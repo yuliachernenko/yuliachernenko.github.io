@@ -9,7 +9,7 @@ main .container h2 {
 }
 
 .bg-sale {
-  background-color: red;
+  background-color: rgb(244, 77, 16);
   color: white;
 }
 
@@ -26,7 +26,7 @@ main .container h2 {
     overflow: hidden;
     position: relative;
     height: 17rem;
-    max-width: 12rem;
+    max-width: 11rem;
     .icons {
       position: absolute;
       top: 1rem;
@@ -78,6 +78,7 @@ main .container h2 {
         left: 0;
         right: 0;
         z-index: 10;
+        color: orangered;
       }
       .price {
         font-weight: 500;
@@ -222,7 +223,7 @@ ul.categories li:nth-child(even) {
 }
 
 .bg-dark {
-  background-color: black;
+  background-color: darkolivegreen;
 }
 .text-white {
   color: white;

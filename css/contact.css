@@ -41,10 +41,9 @@
     color: gainsboro;
     opacity: 1;
   }
-
-  border: 1px dotted red;
 }
 
 .contact-sidebar {
-  border: 1px dotted gold;
+  color: rgb(75, 86, 75);
+  padding: 2em;
 }
