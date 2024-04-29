@@ -1,0 +1,32 @@
+/* about.css */
+
+#about .container {
+  display: grid;
+  gap: 1.8em;
+  grid-template-columns: auto 15rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    height: 15rem;
+  }
+}
+
+.about-main {
+  background-color: rgb(200, 221, 163);
+  padding: 2rem;
+}
+
+.about-sidebar {
+  height: 15rem;
+  width: 17rem;
+}
+
+ul.groop {
+  list-style: disc;
+}

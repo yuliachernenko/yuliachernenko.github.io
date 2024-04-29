@@ -1,171 +1,269 @@
-[
-   {
-      "id": 1,
-      "badge": {
-         "title": "Sold",
-         "bg": "sold"
+{
+   "products": [
+      {
+         "id": 1,
+         "badge": {
+            "title": "Sold",
+            "bg": "sold"
+         },
+         "image": "https://yuliachernenko.github.io/images/woman-2.jpg",
+         "name": "Backpack Brix",
+         "price": 856,
+         "description": "Classic backpack of the Brix collection. Laconic design, high-quality materials and practicality are its main advantages.",
+         "stars": 3,
+         "category": 1
       },
-      "image": "/images/product-1.jpg",
-      "name": "Kui Ye Chen’s AirPods",
-      "price": 21,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 2,
-      "category": 1
-   },
-   {
-      "id": 2,
-      "badge": {
-         "title": "",
-         "bg": ""
+      {
+         "id": 2,
+         "badge": {
+            "title": "",
+            "bg": ""
+         },
+         "image": "https://yuliachernenko.github.io/images/woman-1.jpg",
+         "name": "City Backpack Roll",
+         "price": 1200,
+         "description": "The backpack of the Roll collection was created for the needs of the city: walking, work, study, gym, urban travel, spring and summer holidays. A roomy and functional assistant places all the necessary things for every day.",
+         "stars": 4,
+         "category": 2
       },
-      "image": "/images/product-2.jpg",
-      "name": "Apple wireless keyboard",
-      "price": 30,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 5,
-      "category": 2
-   },
-   {
-      "id": 3,
-      "badge": {
-         "title": "New",
-         "bg": "new"
+      {
+         "id": 3,
+         "badge": {
+            "title": "New",
+            "bg": "new"
+         },
+         "image": "https://yuliachernenko.github.io/images/man-2.jpg",
+         "name": "Backpack Rene",
+         "price": 1345,
+         "description": "The backpack of the Rene collection is roomy, but not bulky, perfectly adapted to the modern rhythms of the city, created specifically to become your constant assistant.",
+         "stars": 5,
+         "category": 3
       },
-      "image": "/images/product-3.jpg",
-      "name": "Cyan cotton t-shirt",
-      "price": 5,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 4,
-      "category": 3
-   },
-   {
-      "id": 4,
-      "badge": {
-         "title": "",
-         "bg": ""
+      {
+         "id": 4,
+         "badge": {
+            "title": "Sale",
+            "bg": "sale"
+         },
+         "image": "https://yuliachernenko.github.io/images/man-1.jpg",
+         "name": "Men's Backpack Zard",
+         "price": 620,
+         "description": "The backpack of the Zard collection is ideal for active people who are not used to wasting a second. They are useful both for traveling and for walks with friends, going to the gym, studying. They look neat on the back and at the same time mega-roomy: water, clothes, personal, any trinkets necessary for the conditions of the city.",
+         "stars": 1,
+         "category": 3
       },
-      "image": "/images/product-4.jpg",
-      "name": "Timex Unisex Originals",
-      "price": 51,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 1,
-      "category": 4
-   },
-   {
-      "id": 5,
-      "badge": {
-         "title": "Sale",
-         "bg": "sale"
+      {
+         "id": 5,
+         "badge": {
+            "title": "",
+            "bg": ""
+         },
+         "image": "https://yuliachernenko.github.io/images/bananka-man1.jpg",
+         "name": "BumBag City",
+         "price": 1125,
+         "description": "The compact City BumBag in black gives a sense of originality and uniqueness in style. BumBag City will give you confidence, emphasize your image and individuality.",
+         "stars": 0,
+         "category": 4
       },
-      "image": "/images/product-5.jpg",
-      "name": "Red digital smartwatch",
-      "price": 10,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 0,
-      "category": 4
-   },
-   {
-      "id": 6,
-      "badge": {
-         "title": "",
-         "bg": ""
+      {
+         "id": 6,
+         "badge": {
+            "title": "",
+            "bg": ""
+         },
+         "image": "https://yuliachernenko.github.io/images/bananka-man2.jpg",
+         "name": "BumBag Dinamic",
+         "price": 1100,
+         "description": "Fanny Pack BumBag Transformer Dynamic - Speed, Movement and Purpose. Bag for 9 compartments. It combines convenience, spaciousness and practicality.",
+         "stars": 5,
+         "category": 4
       },
-      "image": "/images/product-6.jpg",
-      "name": "Nike air max 95",
-      "price": 31,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 5,
-      "category": 5
-   },
-   {
-      "id": 7,
-      "badge": {
-         "title": "Sale",
-         "bg": "sale"
+      {
+         "id": 7,
+         "badge": {
+            "title": "Sale",
+            "bg": "sale"
+         },
+         "image": "https://yuliachernenko.github.io/images/bananka-w1.jpg",
+         "name": "BumBag Lili City",
+         "price": 700,
+         "description": "Stylish BumBag Lili City. An exquisite accessory that will not only complement your image, but thanks to its spaciousness, will allow you to have everything you need with you and in safety.",
+         "stars": 4,
+         "category": 5
       },
-      "image": "/images/product-7.jpg",
-      "name": "Joemalone Women perfume",
-      "price": 35,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 4,
-      "category": 6
-   },
-   {
-      "id": 8,
-      "badge": {
-         "title": "",
-         "bg": ""
+      {
+         "id": 8,
+         "badge": {
+            "title": "",
+            "bg": ""
+         },
+         "image": "https://yuliachernenko.github.io/images/bananka-w2.jpg",
+         "name": "BumBag Lady City",
+         "price": 900,
+         "description": "A handbag made of genuine leather on the belt, the Sambag banana is a great option for people who follow fashion trends.",
+         "stars": 3,
+         "category": 5
       },
-      "image": "/images/product-8.jpg",
-      "name": "Apple Watch",
-      "price": 25,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 3,
-      "category": 8
-   },
-   {
-      "id": 9,
-      "badge": {
-         "title": "Sold",
-         "bg": "sold"
+      {
+         "id": 9,
+         "badge": {
+            "title": "Sold",
+            "bg": "sold"
+         },
+         "image": "https://yuliachernenko.github.io/images/bag-1w.jpg",
+         "name": "Bag Vogue red",
+         "price": 2500,
+         "description": "The Vogue collection bag is a classic option for those who value convenience, comfort and minimalism in details.",
+         "stars": 5,
+         "category": 6
       },
-      "image": "/images/product-9.jpg",
-      "name": "Black Canon EOS camera",
-      "price": 24,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 5,
-      "category": 12
-   },
-   {
-      "id": 10,
-      "badge": {
-         "title": "New",
-         "bg": "new"
+      {
+         "id": 10,
+         "badge": {
+            "title": "New",
+            "bg": "new"
+         },
+         "image": "https://yuliachernenko.github.io/images/bag-2w.jpg",
+         "name": "Bag Cleo blue",
+         "price": 2800,
+         "description": "A stylish women's bag that will complement your look, all the necessary trinkets will always be at hand.",
+         "stars": 0,
+         "category": 6
       },
-      "image": "/images/product-10.jpg",
-      "name": "Silver black round Ipod",
-      "price": 16,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 0,
-      "category": 10
-   },
-   {
-      "id": 11,
-      "badge": {
-         "title": "Sale",
-         "bg": "sale"
+      {
+         "id": 11,
+         "badge": {
+            "title": "Sale",
+            "bg": "sale"
+         },
+         "image": "https://yuliachernenko.github.io/images/traveler-bag.jpg",
+         "name": "Travel Bag Baron",
+         "price": 950,
+         "description": "The Travel Bag bag will become an indispensable accessory in your wardrobe. It doesn't matter where you are going - to the gym or on a business trip, it will come in handy in any caseLorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+         "stars": 5,
+         "category": 7
       },
-      "image": "/images/product-11.jpg",
-      "name": "Digital smartwatch",
-      "price": 13,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 5,
-      "category": 11
-   },
-   {
-      "id": 12,
-      "badge": {
-         "title": "New",
-         "bg": "new"
+      {
+         "id": 12,
+         "badge": {
+            "title": "New",
+            "bg": "new"
+         },
+         "image": "https://yuliachernenko.github.io/images/bag-1man.jpg",
+         "name": "Bag Brad Pitt",
+         "price": 11,
+         "description": "Crossbody bag Brad Pitt sling is perfect for active people in whom comfort and practicality come first.",
+         "stars": 2,
+         "category": 8
+      }
+   ],
+   "categories": [
+      {
+         "id": 1,
+         "image": "https://yuliachernenko.github.io/images/woman-2.jpg",
+         "section": "Backpacks",
+         "name": "Woman's Backpacks"
       },
-      "image": "/images/product-12.jpg",
-      "name": "Black camera lens",
-      "price": 11,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 2,
-      "category": 9
-   },
-   {
-      "id": 13,
-      "badge": {
-         "title": "Sale",
-         "bg": "sale"
+      {
+         "id": 2,
+         "image": "https://yuliachernenko.github.io/images/woman-1.jpg",
+         "section": "Backpacks",
+         "name": "City Backpacks"
       },
-      "image": "/images/product-11.jpg",
-      "name": "Digital smartwatch",
-      "price": 13,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
-      "stars": 5,
-      "category": 7
-   }
+      {
+         "id": 3,
+         "image": "https://yuliachernenko.github.io/images/man-2.jpg",
+         "section": "Backpacks",
+         "name": "Men's Backpacks"
+      },
+      {
+         "id": 4,
+         "image": "https://yuliachernenko.github.io/images/bananka-man1.jpg",
+         "section": "BumBag",
+         "name": "Men's BumBag"
+      },
+      {
+         "id": 5,
+         "image": "https://yuliachernenko.github.io/images/bananka-w1.jpg",
+         "section": "BumBag",
+         "name": "Woman's BumBag"
+      },
+      {
+         "id": 6,
+         "image": "https://yuliachernenko.github.io/images/bag-1w.jpg",
+         "section": "Bags",
+         "name": "Woman's Bags"
+      },
+      {
+         "id": 7,
+         "image": "https://yuliachernenko.github.io/images/traveler-bag.jpg",
+         "section": "Bags",
+         "name": "Travel Bags"
+      },
+      {
+         "id": 8,
+         "image": "https://yuliachernenko.github.io/images/bag-1man.jpg",
+         "section": "Bags",
+         "name": "Men's Bags"
+      }
+   ],
+   "authors": [
+    {
+      "id": "1",
+      "firstName": "Nick",
+      "lastName": "Lee",
+      "numPosts": 5,
+      "numComments": 24,
+      "numLikes": 105
+    },
+    {
+      "id": "2",
+      "firstName": "Olga",
+      "lastName": "Kolotilo",
+      "numPosts": 15,
+      "numComments": 27,
+      "numLikes": 89
+    }
+  ],
+   "posts": [{
+        "id": "1",
+        "title": "How to choose a backpack?",
+        "content": "To make your choice as simple as possible, we in the online store divide backpacks according to several criteria: by volume, by appointment, by article.",
+        "cover":	"https://yuliachernenko.github.io/images/woman-2.jpg",
+        "authorId": 2,
+        "datePublished": 1712002031418,
+        "numComments": 2,
+        "likes": 7
+}, 
+{
+        "id": "2",
+        "title": "Clothes bag which color to choose?",
+        "content": "It is the color that remains the main factor when choosing a bag for the image. To do this, a woman's wardrobe should have at least two universal accessories – light and dark.",
+        "cover":	"https://yuliachernenko.github.io/images/bag-1w.jpg",
+        "authorId": 1,
+        "datePublished": 1712102031418,
+        "numComments": 1,
+        "likes": 14
+    }, 
+    {
+        "id": "3",
+        "title": "What is a travel bag?",
+        "content": "A travel bag is an accessory used when traveling to store personal belongings. It can be soft or hard, depending on the model and your needs.",
+        "cover":	"https://yuliachernenko.github.io/images/traveler-bag.jpg",
+        "authorId": 1,
+        "datePublished": 1712132031418,
+        "numComments": 4,
+        "likes": 7
+    }, 
+    {
+        "id": "4",
+        "title": "Why a BumBag?",
+        "content": "A BumBag is a compact accessory that can be worn on the belt or over the shoulder. It allows you to keep all your valuables at hand and not worry about their safety.",
+        "cover":	"https://yuliachernenko.github.io/images/bananka-man1.jpg",
+        "authorId": 2,
+        "datePublished": 1712234031785,
+        "numComments": 4,
+        "likes": 7
+    }
 ]
+}

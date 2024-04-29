@@ -12,9 +12,9 @@
 
 :root {
   --primary-text-color: #009;
-  --primary-bg-color: #fff;
+  --primary-bg-color: rgb(232, 240, 218);
   --anchor-color: #333;
-  --anchor-activ-color: salmon;
+  --anchor-activ-color: rgb(244, 77, 16);
   --currency-symbol: "\20B4";
   --primary-font-family: "Roboto", sans-serif;
   --primary-font-size: 0.875rem;
@@ -24,8 +24,8 @@
 font-family
 font-size */
 body {
-  color: var(--primary-text-color);
-  background: var(--body-bg-color);
+  color: var(--anchor-color);
+  background: var(--primary-bg-color);
   font-family: "Roboto", sans-serif;
   /* 1rem=16px */
   /* font-size: 0.875rem / 1.3; */

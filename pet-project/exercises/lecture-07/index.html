@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .img-aling {
+        float: right;
+        width: 200px;
+        max-width: 100%;
+      }
+      p {
+        width: 400px;
+      }
+      /* - Встановити background для класу negative як лінійний градієнт, що
+          направлений вліво та має такі точки зупинки: -50%, -10%, 0%, 100%, 150%. Для
+          кожної точки зупинки встановити колір, що змінюється від світло-синього до
+          темно-синього. */
+      .negative {
+        background-image: linear-gradient(
+          to left,
+          rgb(66, 170, 250) -50%,
+          rgb(100, 174, 254) -10%,
+          rgb(5, 72, 227) 0%,
+          rgb(2, 47, 126) 100%,
+          #061874f1 150%
+        );
+      }
+      /* Встановити background для класу percents як лінійний градієнт, що направлений вниз та має такі точки зупинки: 2em, 4em, 8em, 16em, 32em, 64em, 128em. Для кожної точки зупинки встановити колір, що змінюється від світло-зеленого до темно-зеленого. */
+      .percents {
+        background: linear-gradient(
+          to bottom,
+          rgb(166, 231, 143) 2em,
+          rgb(171, 226, 151) 4em,
+          rgb(96, 175, 67) 8em,
+          rgb(67, 112, 49) 16em,
+          rgb(52, 126, 25) 32em,
+          rgb(37, 98, 15) 64em,
+          rgb(6, 17, 2) 128em
+        );
+      }
+      /* Встановити background для класу radial два радіальних градієнта з типом ellipse, перший з яких містить 2 кольори - помаранчевий та прозорий і направлений вверх, а другий містить 2 кольори - червоний та прозорий і направлений вниз. */
+      .radial {
+        background: radial-gradient(ellipse at top, orange, transparent),
+          radial-gradient(ellipse at bottom, red, transparent);
+      }
+    </style>
+  </head>
+  <body class="body">
+    <h1>Gradient Text Glow</h1>
+
+    <div class="percents">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam
+      quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere
+      necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos
+      itaque!
+    </div>
+
+    <div class="negative">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam
+      quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere
+      necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos
+      itaque!
+    </div>
+
+    <div class="radial">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam
+      quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere
+      necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos
+      itaque!
+    </div>
+    <!-- Створити svg-прямокутник розміром 100х100 з координатами 20,20 20, 20. Для обрамлення встановити колір #1c87c9 та товщину лінії 4. Встановити фон прямокутника lightgray. -->
+    <div>
+      <svg>
+        <rect
+          height="100"
+          width="100"
+          points="20,20,20,20"
+          stroke="#1c87c9"
+          fill="lightgray"
+          stroke-width="4"
+        />
+      </svg>
+    </div>
+
+    <!-- Створити svg-коло розміром 200х200 радіусом = 60 та центром з координатами 100, 70. Для обрамлення встановити червоний колір та товщину лінії 4. Встановити фон кола lightgray. -->
+    <div>
+      <svg>
+        <circle
+          height="200"
+          width="200"
+          cx="100"
+          cy="70"
+          r="60"
+          stroke="red"
+          stroke-width="4"
+          fill="lightgray"
+        />
+      </svg>
+    </div>
+    <!-- Створити svg-малюнок годинника, що показує час = 3 години -->
+    <svg
+      version="1.1"
+      width="200"
+      height="200"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="100"
+        cy="70"
+        r="60"
+        stroke="green"
+        stroke-width="4"
+        fill="lightgray"
+      />
+      <path d="M100 10 v60 h60 " stroke="black" stroke-width="4" fill="none" />
+    </svg>
+
+    <svg viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+      <!-- polygon is an closed shape -->
+      <polygon
+        stroke="black"
+        fill="none"
+        points="50,0 21,90 98,35 2,35 79,90"
+      />
+    </svg>
+
+    <img
+      src="/exercises/lecture-07/images/sign8.png"
+      srcset="/exercises/lecture-07/images/sign16.png"
+    />
+    <img
+      srcset="
+        /exercises/lecture-07/images/product-5-200px.jpg,
+        /exercises/lecture-07/images/product-5-400px.jpg 1x,
+        /exercises/lecture-07/images/product-5-400px.jpg 2x
+      "
+      src="/exercises/lecture-07/images/product-5-200px.jpg"
+    />
+    <p>
+      <img
+        src="/exercises/lecture-07/images/product-5-400px.jpg"
+        class="img-aling"
+      />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odit ex
+      error omnis, est expedita. Consequatur voluptate enim harum aut.
+      Reprehenderit, labore recusandae error quo vero at possimus eligendi
+      dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptatum, accusamus? Reiciendis eligendi inventore enim mollitia ducimus
+      nobis odit rem neque porro, libero explicabo quo, asperiores reprehenderit
+      ad perferendis ex distinctio?
+    </p>
+  </body>
+</html>

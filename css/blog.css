@@ -2,16 +2,33 @@
 
 #blog .container {
   display: grid;
-  gap: 1.3em;
-  grid-template-columns: auto 15rem;
+  gap: 3em;
+  grid-template-columns: 15rem auto;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    height: 15rem;
+  }
+  text-indent: 2em;
 }
 
 .blog-main {
-  height: 30ch;
-  border: 1px dotted red;
+  background-color: rgb(200, 221, 163);
+  padding: 2rem;
 }
 
 .blog-sidebar {
-  height: 30ch;
-  border: 1px dotted gold;
+  height: 15rem;
+  width: 17rem;
+}
+
+.blog-more {
+  color: rgb(238, 160, 57);
+  padding: 2em;
 }

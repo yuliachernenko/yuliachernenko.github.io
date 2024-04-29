@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Hello, javascript!</h1>
+
+    <!-- В середині script визначте 2 змінні message1 зі значенням Hello та message2
+    зі значенням JavaScript. Використовуючи ці змінні та alert, виконайте
+    відображення рядка "Hello JavaScript!". -->
+
+    <script>
+      let message1 = "Hello";
+      let message2 = "JavaScript";
+      alert(message1 + " " + message2 + "!");
+    </script>
+
+    <!-- Виправити помилку у коді -->
+    <script>
+      "use strict";
+
+      let message3 = "hello";
+      let message4 = 123456;
+    </script>
+
+    <!-- Напишіть програму, що запитує у користувача значення двох змінних x, y, та виводить їх суму -->
+    <script>
+      let x = parseFloat(prompt("Введіть значення x:"));
+      let y = parseFloat(prompt("Введіть значення y:"));
+      let sum = x + y;
+      alert(sum);
+    </script>
+
+    <!-- Виправити помилку у коді -->
+
+    <script>
+      "use strict";
+
+      let a = BigInt(9007199254740991);
+      let b = 9007199254740991n;
+      console.log(a + b);
+      // Uncaught TypeError: can't convert BigInt to number
+    </script>
+
+    <!-- Перепишіть код так, щоб результат дорівнював 5 -->
+    <script>
+      "use strict";
+
+      let apples = 2;
+      let oranges = 3;
+      alert(apples + oranges);
+    </script>
+    <!-- Які кінцеві значення всіх змінних a, b, c і d після виконання наведеного нижче коду? -->
+    <script>
+      "use strict";
+
+      //let a = 1,b = 1;
+      let c = ++a; // ? c=2, a=2
+      let d = b++; // ? d=1, b=2
+    </script>
+
+    <!-- Які значення a і x після виконання наведеного нижче коду? -->
+    <script>
+      "use strict";
+
+      //let a = 2;
+      //   let x = 1 + (a *= 2); //a=4, x=5
+    </script>
+    <!-- Які результати цих виразів? -->
+    <script>
+      "use strict";
+
+      "" + 1 + 0; //10
+      "" - 1 + 0; //1
+      true + false; //1
+      6 / "3"; //2
+      "2" * "3"; //6
+      4 + 5 + "px"; //9px
+      "$" + 4 + 5; //$45
+      "4" - 2; //2
+      "4px" - 2; //NaN
+      "  -9  " + 5; //-95
+      "  -9  " - 5; //-14
+      null + 1; //1
+      undefined + 1; //NaN
+      NaN + 1; //NaN
+    </script>
+
+    <script>
+      "use strict";
+      // скоротити цей код за допомогою операторів += і *=:
+      let n = 2;
+      // n = n + 5;
+      // n = n * 2;
+      n += 5;
+      n *= 2;
+    </script>
+    <script>
+      let n1 = parseInt("   123   ");
+      let n2 = Number("123z");
+      let n3 = +true;
+      let n4 = +false;
+
+      console.log(n1, n2, n3, n4);
+      // Перетворити змінні n1, n2, n3, n4 на числа
+    </script>
+  </body>
+</html>
