@@ -138,8 +138,8 @@ const PostList = () => {
         <BlogContext.Provider value={blogHeader}>
             <Layout>
                 <button onClick={handleClick}>Sort by {whichSort}</button>
-                <section>
-                    <div>
+                <section className='max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
                     {posts.map((post) =>
                     <PostListItem item={post} key={post.id} user={findById(post.authorId)} />
                     )}
