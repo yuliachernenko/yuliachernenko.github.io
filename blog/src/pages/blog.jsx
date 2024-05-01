@@ -1,14 +1,13 @@
 
-import { useContext, createContext } from 'react'
-import Post from '../components/Post';
-import './home.css';
+import  { useContext, createContext } from 'react';
+import PostList from '../components/PostList';
+
+const BlogContext = createContext('');
 
 function Blog() {
-    const BlogContext = createContext("");
-
     const Layout = ({children}) => {
         return (
-            <div>
+            <div className="max-w-screen-xl mx-auto p-1">
                 <Header />
                 <main>
                     {children}
@@ -16,35 +15,43 @@ function Blog() {
             </div>
         )
     }
-    const Header = () => {
-        return (
-            <header>
-                <BlogInfo/>              
-            </header>
-        )
-    }
 
     const BlogInfo = () => {
         const blogHeader = useContext(BlogContext)
         return (
             <>
-                <h2 className='text-3xl text-blue-900'>{blogHeader.blogName}</h2>
+            <span className="text-3xl font-bold">{blogHeader.blogName}</span>
+            <p>{blogHeader.blogDescription}</p>
             </>
         )
     }
 
     const blogHeader = {
-        blogName: "About Bags",
+        blogName: "Our blog",
+        blogDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi culpa odio asperiores a tempore."
     }
 
-  return (
-    <BlogContext.Provider value={blogHeader}>
-      <Layout>
-        <Post />
-      </Layout>
-    </BlogContext.Provider>
-  );
+    const Header = () => {
+        return (
+            <div className="border-b-2 border-indigo-600 mb-5 flex justify-between text-sm">
+                <div className="text-indigo-600 flex items-center pb-2 pr-2 uppercase">
+                    <a href="#" className="font-semibold inline-block">
+                <BlogInfo />
+                </a>
+                </div>
+                <a href="#" className="text-1xl">See All</a>
+            </div>
+        )
+    }
 
+    return (
+        <BlogContext.Provider value={blogHeader}>
+            <Layout>
+                <PostList />
+            </Layout>
+        </BlogContext.Provider>
+
+    )
 }
 
-export default Blog
+export default Blog;
